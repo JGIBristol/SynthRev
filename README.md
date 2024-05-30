@@ -1,6 +1,7 @@
 # SynthRev
 
 Synthetic Data for Electronic Health Records, Generation and Benchmarking methods intern project summer 2024 (June 4th - August 23rd)
+Code produced for this project should be stored in this repository. This repository should not be used to store any data.
 
 ## Project Info
 
@@ -30,7 +31,7 @@ https://www.sciencedirect.com/science/article/pii/S0925231222004349?casa_token=P
 
 ### Expected Outputs
 
-- [ ] Upload any of your code to this repo (once you finish this placement, we can make the repo public so you can share the code with other people)
+- [ ] Upload any of your code to this repo (once you finish this placement, we can make the repo public so you can share the code with other people) *This repository should not be used to store any data*
 - [ ] Write a JGI blog post to talk about your experiences and your findings
 - [ ] Present your work to some data scientists, perhaps from the JGI team and the JGI/iLabAfrica group!
 
