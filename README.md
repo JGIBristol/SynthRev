@@ -7,18 +7,19 @@ Code produced for this project should be stored in this repository. This reposit
 
 ### Project Steps
 
-1.	Get to grips with the project problem
+1.	Get to grips with the project problem (~1-2 weeks)
 - [ ]	Watch this review of Synthetic Data generation methods: https://youtu.be/KMJodqsvvtE?si=NcByvF51XbH-2WZm 
 -	[ ] Read this review paper: SyntheticDataReview.pdf
 https://www.sciencedirect.com/science/article/pii/S0925231222004349?casa_token=PctLs_5KiZYAAAAA:VvibS1nKYZ6uZHuYKwkprs2Aah4C33lY-riaS0bwX801IyNP9pZ7Pw_rR__9quz0hp0HTe_0vQ
 -	[ ] Access MIMIC IV electronic health records dataset: https://physionet.org/content/mimiciv/2.2/
 -	[ ] Read ALSPAC Seedcorn Blog/Survey responses
 (Huw will send these over when they’re available)
-2.	Basic data exploration and low fidelity synthetic data generation + benchmarking
+2.	Basic data exploration and low fidelity synthetic data generation + benchmarking (~2-4 weeks)
 -	[ ] Pick some subset of the dataset, identify some particular variables of interest and make it into a usable form. Maybe use the ALSPAC Seedcorn blog to guide you here.
 -	[ ] Before you use any pre-trained packages, manually code your own method that independently randomly samples each variable from a nice distribution. 
 -	[ ] Write some benchmarking code (in either R or Python) that compares the distribution between original and synthetic variables, the correlations between pairs of variables and maybe some other basic sanity checks.
-3.	Pick some more involved ML methods, maybe using pre-existing packages or code your own. For each method:
+3.	Pick some more involved ML methods, maybe using pre-existing packages or code your own. (Whatever time you have left!)
+For each method:
 - [ ] Use it generate some synthetic data
 - [ ] Use some of your benchmarking methods to evaluate how good the synthesis methods are
 
