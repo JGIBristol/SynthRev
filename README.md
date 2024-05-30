@@ -1,6 +1,6 @@
 # SynthRev
 
-Synthetic Data for Electronic Health Records, Generation and Benchmarking methods intern project summer 2024
+Synthetic Data for Electronic Health Records, Generation and Benchmarking methods intern project summer 2024 (June 4th - August 23rd)
 
 ## Project Info
 
