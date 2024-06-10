@@ -15,7 +15,9 @@ https://www.sciencedirect.com/science/article/pii/S0925231222004349?casa_token=P
 -	[x] Read ALSPAC Seedcorn Blog/Survey responses
 (Huw will send these over when they’re available)
 2.	Basic data exploration and low fidelity synthetic data generation + benchmarking (~2-4 weeks)
--	[ ] Pick some subset of the dataset, identify some particular variables of interest and make it into a usable form. Maybe use the ALSPAC Seedcorn blog to guide you here.
+-	[ ] Pick some subset of the dataset (decided to use ICU records initially as they're smaller than hospital records), identify some particular variables of interest and make it into a usable form. Maybe use the ALSPAC Seedcorn blog to guide you here.
+-	[ ] Get patient: Age, sex, ethnicity, location (home, GP, hospital/other treatment location), ICD Diagnosis Codes (suggest ICD-10 only), OPCS - 4 treatment codes
+For each one, look at the data type and see how easy it will be to replicate the distribution of this dataset
 -	[ ] Before you use any pre-trained packages, manually code your own method that independently randomly samples each variable from a nice distribution. 
 -	[ ] Write some benchmarking code (in either R or Python) that compares the distribution between original and synthetic variables, the correlations between pairs of variables and maybe some other basic sanity checks.
 3.	Pick some more involved ML methods, maybe using pre-existing packages or code your own. (Whatever time you have left!)
