@@ -8,11 +8,11 @@ Code produced for this project should be stored in this repository. This reposit
 ### Project Steps
 
 1.	Get to grips with the project problem (~1-2 weeks)
-- [ ]	Watch this review of Synthetic Data generation methods: https://youtu.be/KMJodqsvvtE?si=NcByvF51XbH-2WZm 
--	[ ] Read this review paper: SyntheticDataReview.pdf
+- [x]	Watch this review of Synthetic Data generation methods: https://youtu.be/KMJodqsvvtE?si=NcByvF51XbH-2WZm 
+-	[x] Read this review paper: SyntheticDataReview.pdf
 https://www.sciencedirect.com/science/article/pii/S0925231222004349?casa_token=PctLs_5KiZYAAAAA:VvibS1nKYZ6uZHuYKwkprs2Aah4C33lY-riaS0bwX801IyNP9pZ7Pw_rR__9quz0hp0HTe_0vQ
--	[ ] Access MIMIC IV electronic health records dataset: https://physionet.org/content/mimiciv/2.2/
--	[ ] Read ALSPAC Seedcorn Blog/Survey responses
+-	[x] Access MIMIC IV electronic health records dataset: https://physionet.org/content/mimiciv/2.2/
+-	[x] Read ALSPAC Seedcorn Blog/Survey responses
 (Huw will send these over when they’re available)
 2.	Basic data exploration and low fidelity synthetic data generation + benchmarking (~2-4 weeks)
 -	[ ] Pick some subset of the dataset, identify some particular variables of interest and make it into a usable form. Maybe use the ALSPAC Seedcorn blog to guide you here.
