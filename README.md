@@ -27,7 +27,7 @@ For each method:
 
 ### Other suggested acitivites 
 
--	[ ] Attending some events for Bristol Data Week https://www.bristol.ac.uk/golding/events/data-week/ 
+-	[x] Attending some events for Bristol Data Week https://www.bristol.ac.uk/golding/events/data-week/ 
 -	[ ] Attending Data Ethics Club events https://dataethicsclub.com/ 
 -	[ ] Attending (tickets are free, can attend online) HACA 2024 https://haca-conference.nhs.uk/
 -	[ ] Engage with the Data Hazards project, maybe fill out a self assessment form for this sort of exercise https://datahazards.com/
