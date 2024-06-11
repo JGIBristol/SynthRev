@@ -20,7 +20,7 @@ https://www.sciencedirect.com/science/article/pii/S0925231222004349?casa_token=P
 For each one, look at the data type and see how easy it will be to replicate the distribution of this dataset
 -	[ ] Before you use any pre-trained packages, manually code your own method that independently randomly samples each variable from a nice distribution. 
 -	[ ] Write some benchmarking code (in either R or Python) that compares the distribution between original and synthetic variables, the correlations between pairs of variables and maybe some other basic sanity checks.
-3.	Pick some more involved ML methods, maybe using pre-existing packages or code your own. (Whatever time you have left!)
+3.	Pick some more involved ML methods, maybe using pre-existing packages (one option is: https://github.com/vanderschaarlab/synthcity) or code your own. (Whatever time you have left!)
 For each method:
 - [ ] Use it generate some synthetic data
 - [ ] Use some of your benchmarking methods to evaluate how good the synthesis methods are
