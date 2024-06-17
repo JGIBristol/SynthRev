@@ -15,11 +15,20 @@ https://www.sciencedirect.com/science/article/pii/S0925231222004349?casa_token=P
 -	[x] Read ALSPAC Seedcorn Blog/Survey responses
 (Huw will send these over when they’re available)
 2.	Basic data exploration and low fidelity synthetic data generation + benchmarking (~2-4 weeks)
--	[ ] Pick some subset of the dataset (decided to use ICU records initially as they're smaller than hospital records), identify some particular variables of interest and make it into a usable form. Maybe use the ALSPAC Seedcorn blog to guide you here.
--	[ ] Get patient: Age, sex, ethnicity, location (home, GP, hospital/other treatment location), ICD Diagnosis Codes (suggest ICD-10 only), OPCS - 4 treatment codes
-For each one, look at the data type and see how easy it will be to replicate the distribution of this dataset
--	[ ] Before you use any pre-trained packages, manually code your own method that independently randomly samples each variable from a nice distribution. 
+-	[x] Pick some subset of the dataset (decided to use ICU records initially as they're smaller than hospital records), identify some particular variables of interest and make it into a usable form. Maybe use the ALSPAC Seedcorn blog to guide you here.
+-	[x] Get patient: Age, sex, ethnicity, location (home, GP, hospital/other treatment location), ICD Diagnosis Codes (suggest ICD-10 only), OPCS - 4 treatment codes
+For each one, we looked at the data type and see how easy it will be to replicate the distribution of this dataset. 
+- [ ] For the categorical data, Huw's going to make some simple code that takes a categorical column and randomly sample from that column's values to produce a synthetic version of the categories.
+- [ ] Chakaya's next step is to look into numerical data for MIMIC and extract time series data with the following columns:
+subject_id, hadm_id, age, chart_time, Respiratory Rate, O2 saturation pulseoxymetry, ART BP Systolic, Heart Rate, GCS Total, Temperature Celsius
+If this is too difficult/computationally intensive, she could just extract the first reading for each of these variables for each hadm_id
+- [ ] Chakaya will then look into writing some basic synthetic generation based on independently sampling from each column. A few suggested options below:
+    1) Work out the sample mean and variance of each column individually. And then randomly sample from a Gaussian of the same mean and variance for your         synthetic.
+    2) pick a collection of different continuous probability distributions (e.g. gaussian, log-normal, exponential...), set them to be the same mean and           variance as your data and pick which one fits best for each column, or least worst. Then randomly sample from that to synthesise new data.
+    3) Generate a KDE for each variable and then sample from that (recommend looking at:                                     https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.gaussian_kde.html)
+
 -	[ ] Write some benchmarking code (in either R or Python) that compares the distribution between original and synthetic variables, the correlations between pairs of variables and maybe some other basic sanity checks.
+      
 3.	Pick some more involved ML methods, maybe using pre-existing packages (one option is: https://github.com/vanderschaarlab/synthcity) or code your own. (Whatever time you have left!)
 For each method:
 - [ ] Use it generate some synthetic data
