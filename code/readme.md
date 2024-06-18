@@ -8,4 +8,8 @@ Note what each bit of code does and who wrote it :)
 - Designed to integrate with pandas dataframes.
 - Future ideas make it more compatible with NaN values and maybe add some testing for the functions.
 
+# CatData.ipynb (Chakaya)
+- Code for creating a consolidated dataset based on categorical features.
+- Creates two seperate datasets for diagnosis and treatments.
+
   
