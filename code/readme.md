@@ -12,4 +12,6 @@ Note what each bit of code does and who wrote it :)
 - Code for creating a consolidated dataset based on categorical features.
 - Creates two seperate datasets for diagnosis and treatments.
 
+# NumericalData.ipynb (Chakaya)
+- This code extracts numerical data based on specified numerical variables such as age and heart rate.
   
