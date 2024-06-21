@@ -18,7 +18,7 @@ https://www.sciencedirect.com/science/article/pii/S0925231222004349?casa_token=P
 -	[x] Pick some subset of the dataset (decided to use ICU records initially as they're smaller than hospital records), identify some particular variables of interest and make it into a usable form. Maybe use the ALSPAC Seedcorn blog to guide you here.
 -	[x] Get patient: Age, sex, ethnicity, location (home, GP, hospital/other treatment location), ICD Diagnosis Codes (suggest ICD-10 only), OPCS - 4 treatment codes
 For each one, we looked at the data type and see how easy it will be to replicate the distribution of this dataset. 
-- [ ] For the categorical data, Huw's going to make some simple code that takes a categorical column and randomly sample from that column's values to produce a synthetic version of the categories.
+- [x] For the categorical data, Huw's going to make some simple code that takes a categorical column and randomly sample from that column's values to produce a synthetic version of the categories.
 - [ ] Chakaya's next step is to look into numerical data for MIMIC and extract time series data with the following columns:
 subject_id, hadm_id, age, chart_time, Respiratory Rate, O2 saturation pulseoxymetry, ART BP Systolic, Heart Rate, GCS Total, Temperature Celsius
 If this is too difficult/computationally intensive, she could just extract the first reading for each of these variables for each hadm_id
