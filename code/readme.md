@@ -11,7 +11,11 @@ Note what each bit of code does and who wrote it :)
 # CatData.ipynb (Chakaya)
 - Code for creating a consolidated dataset based on categorical features.
 - Creates two seperate datasets for diagnosis and treatments.
+- Generates the csv files for these two datasets, Combined_Diagnosis.csv, Combined_Treatments.csv
+- Data files used: icustays.csv, patients.csv, admissions.csv, d_icd_diagnoses.csv, diagnoses.csv, d_icd_procedures.csv, procedures_icd.csv
 
 # NumericalData.ipynb (Chakaya)
 - This code extracts numerical data based on specified numerical variables such as age and heart rate.
+- Generates the NumericalData.csv file
+- Data files used: d_items.csv, chartevents.csv, patients.csv
   
