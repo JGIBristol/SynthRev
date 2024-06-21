@@ -27,7 +27,10 @@ If this is too difficult/computationally intensive, she could just extract the f
     2) pick a collection of different continuous probability distributions (e.g. gaussian, log-normal, exponential...), set them to be the same mean and           variance as your data and pick which one fits best for each column, or least worst. Then randomly sample from that to synthesise new data.
     3) Generate a KDE for each variable and then sample from that (recommend looking at:                                     https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.gaussian_kde.html)
 
--	[ ] Write some benchmarking code (in either R or Python) that compares the distribution between original and synthetic variables, the correlations between pairs of variables and maybe some other basic sanity checks.
+-	[ ] Write some benchmarking code that compares the distribution between original and synthetic variables, the correlations between pairs of variables and maybe some other basic sanity checks.
+    Some suggested options:
+      1) Compare summary stats (mean, median, quartiles, range, outliers etc) for each variable between original and synthetic data
+      2) Compare correlation coeffecients between each pair of variables in original and then in synthetic data (might want to output this as a heatmap?)
       
 3.	Pick some more involved ML methods, maybe using pre-existing packages (one option is: https://github.com/vanderschaarlab/synthcity) or code your own. (Whatever time you have left!)
 For each method:
