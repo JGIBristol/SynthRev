@@ -25,9 +25,9 @@ Note what each bit of code does and who wrote it :)
 # NumericalDataOpt.ipynb (Chakaya)
 - This code is used to create numerical datasets.
 - Three options are used:
-  ⋅⋅*Option 1: Using the earliest chart time for each hadm_id
-  ⋅⋅*Option 2: Picking the charttime with the fewest NaNs
-  ⋅⋅*Option 3: Picking the first reading within the hour (from the start of the first recorded time)
+  - ⋅⋅*Option 1: Using the earliest chart time for each hadm_id
+  - ⋅⋅*Option 2: Picking the charttime with the fewest NaNs
+  - ⋅⋅*Option 3: Picking the first reading within the hour (from the start of the first recorded time)
 - Generates three csv files NumOp1.csv, NumOp2.csv and NumOp3.csv
 - Data files used: d_items.csv, chartevents.csv, patients.csv
 - Filtered items extracted in d_items.csv include 22021: Respiratory Rate, 220277: O2 Saturation pulseoxymetry, 225309:ART BP Systolic, 220045: Heart Rate, 20739: GCS - Eye Opening, 223900: GCS - Verbal Response, 223901: GCS - Motor Response, 223762: Temperature Celsius
