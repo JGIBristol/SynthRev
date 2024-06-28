@@ -14,6 +14,7 @@ https://www.sciencedirect.com/science/article/pii/S0925231222004349?casa_token=P
 -	[x] Access MIMIC IV electronic health records dataset: https://physionet.org/content/mimiciv/2.2/
 -	[x] Read ALSPAC Seedcorn Blog/Survey responses
 (Huw will send these over when they’re available)
+
 2.	Basic data exploration and low fidelity synthetic data generation + benchmarking (~2-4 weeks)
 -	[x] Pick some subset of the dataset (decided to use ICU records initially as they're smaller than hospital records), identify some particular variables of interest and make it into a usable form. Maybe use the ALSPAC Seedcorn blog to guide you here.
 -	[x] Get patient: Age, sex, ethnicity, location (home, GP, hospital/other treatment location), ICD Diagnosis Codes (suggest ICD-10 only), OPCS - 4 treatment codes
@@ -26,11 +27,11 @@ If this is too difficult/computationally intensive, she could just extract the f
     1) Work out the sample mean and variance of each column individually. And then randomly sample from a Gaussian of the same mean and variance for your         synthetic.
     2) pick a collection of different continuous probability distributions (e.g. gaussian, log-normal, exponential...), set them to be the same mean and           variance as your data and pick which one fits best for each column, or least worst. Then randomly sample from that to synthesise new data.
     3) Generate a KDE for each variable and then sample from that (recommend looking at:https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.gaussian_kde.html)
-
--	[ ] Write some benchmarking code that compares the distribution between original and synthetic variables, the correlations between pairs of variables and maybe some other basic sanity checks.
+- [ ] Brainstorm what methods you could use for benchmarking synthetic data, both in terms of statistical fidelity as well as privacy preservation.
     Some suggested options:
       1) Compare summary stats (mean, median, quartiles, range, outliers etc) for each variable between original and synthetic data
       2) Compare correlation coeffecients between each pair of variables in original and then in synthetic data (might want to output this as a heatmap?)
+- [ ] Write some benchmarking code that compares the distribution between original and synthetic variables, the correlations between pairs of variables and maybe some other basic sanity checks.
       
 3.	Pick some more involved ML methods, maybe using pre-existing packages (one option is: https://github.com/vanderschaarlab/synthcity) or code your own. (Whatever time you have left!)
 For each method:
