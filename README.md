@@ -25,7 +25,7 @@ If this is too difficult/computationally intensive, she could just extract the f
 - [ ] Chakaya will then look into writing some basic synthetic generation based on independently sampling from each column. A few suggested options below:
     1) Work out the sample mean and variance of each column individually. And then randomly sample from a Gaussian of the same mean and variance for your         synthetic.
     2) pick a collection of different continuous probability distributions (e.g. gaussian, log-normal, exponential...), set them to be the same mean and           variance as your data and pick which one fits best for each column, or least worst. Then randomly sample from that to synthesise new data.
-    3) Generate a KDE for each variable and then sample from that (recommend looking at:                                     https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.gaussian_kde.html)
+    3) Generate a KDE for each variable and then sample from that (recommend looking at:https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.gaussian_kde.html)
 
 -	[ ] Write some benchmarking code that compares the distribution between original and synthetic variables, the correlations between pairs of variables and maybe some other basic sanity checks.
     Some suggested options:
@@ -40,7 +40,7 @@ For each method:
 ### Other suggested acitivites 
 
 -	[x] Attending some events for Bristol Data Week https://www.bristol.ac.uk/golding/events/data-week/
--	[ ] Attending some JGI Data Science Team Meetings (sent meeting invites on outlook)
+-	[x] Attending some JGI Data Science Team Meetings (sent meeting invites on outlook)
 -	[ ] Attending Data Ethics Club events https://dataethicsclub.com/ 
 -	[ ] Attending (tickets are free, can attend online) HACA 2024 https://haca-conference.nhs.uk/
 -	[ ] Engage with the Data Hazards project, maybe fill out a self assessment form for this sort of exercise https://datahazards.com/
