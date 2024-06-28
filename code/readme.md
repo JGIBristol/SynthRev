@@ -19,9 +19,6 @@ Note what each bit of code does and who wrote it :)
 - Generates the NumericalData.csv file
 - Data files used: d_items.csv, chartevents.csv, patients.csv
 
-# NumericalSyntheticData (Chakaya)
-- _Under construction_
-
 # NumericalDataOpt.ipynb (Chakaya)
 - This code is used to create numerical datasets.
 - Three options are used:
@@ -32,4 +29,7 @@ Note what each bit of code does and who wrote it :)
 - Data files used: d_items.csv, chartevents.csv, patients.csv
 - Filtered items extracted in d_items.csv include 22021: Respiratory Rate, 220277: O2 Saturation pulseoxymetry, 225309:ART BP Systolic, 220045: Heart Rate, 20739: GCS - Eye Opening, 223900: GCS - Verbal Response, 223901: GCS - Motor Response, 223762: Temperature Celsius
 - **_Note: Appropriate option for data cleaning will be identified and code will be updated accordingly_**	
-  
+
+# NumericalSythenticData.ipynb (Chakaya)
+  - Code to generate synthetic data based off statistical properties of the data (i.e Mean and Varaiance) and a gaussian distribution.
+  - Data files used: NumOp1.csv, NumOp2.csv, NumOp3.csv
