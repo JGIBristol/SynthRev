@@ -31,5 +31,10 @@ Note what each bit of code does and who wrote it :)
 - **_Note: Appropriate option for data cleaning will be identified and code will be updated accordingly_**	
 
 # NumericalSythenticData.ipynb (Chakaya)
-  - Code to generate synthetic data based off statistical properties of the data (i.e Mean and Varaiance) and a gaussian distribution.
-  - Data files used: NumOp1.csv, NumOp2.csv, NumOp3.csv
+- Code to generate synthetic data based off statistical properties of the data (i.e Mean and Varaiance) and a gaussian distribution.
+- Data files used: NumOp1.csv, NumOp2.csv, NumOp3.csv
+
+# NumericalSyntheticDataDist.ipynb (Chakaya)
+- Generates synhtetic data based on various distributions (normal, lognormal, exponential, gamma, beta , weibull_min, t , f)
+- Picks the best perfomring distrubution for each column maintaining the mean and variance of the real data.
+- Data files used: NumOp1.csv, NumOp2.csv, NumOp3.csv
