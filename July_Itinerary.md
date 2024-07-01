@@ -2,7 +2,7 @@
 (Not finalised)
 
 ## Monday 15th
-- Arrive mid-morning afternoon
+- Arrive mid-morning/early afternoon
 - Huw will meet you at Royal Fort House on University of Bristol Campus (https://www.bristol.ac.uk/golding/about/) and show you around
 - Lunch
 
