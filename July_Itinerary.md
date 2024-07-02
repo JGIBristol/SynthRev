@@ -2,13 +2,17 @@
 (Not finalised)
 
 ## Monday 15th
-- Arrive mid-morning afternoon
+- Arrive mid-morning/early afternoon
 - Huw will meet you at Royal Fort House on University of Bristol Campus (https://www.bristol.ac.uk/golding/about/) and show you around
 - Lunch
 
 ### 3-4 Co-working with Will Chapman, JGI Data Scientist: 
 - Chakaya can show Will her work processing MIMIC IV
 - Discussing Will's research on insilico trials (simulated clinical trials)
+
+### 4-5 (Optional) Data Ethics Club Data Feminism Reading Group
+- More info here: https://dataethicsclub.com/join_in/meetings/2024/data-feminism.html
+- Huw will be going to this!
 
 ## Tuesday 16th
 - Arrive between 9 and 10
@@ -27,8 +31,8 @@
 
 ### 4-5 (Optional) Ask-JGI
 - We have a cohort of PhD students who answer queries from researchers
-- Huw will go to this meeting to catch up with the students who are there and
-
+- Huw will go to this meeting to catch up with the students who are there
+  
 ## Wednesday 17th
 
 ### 9:30-10:30 Data Science Meeting

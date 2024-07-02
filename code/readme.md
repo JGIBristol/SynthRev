@@ -38,3 +38,8 @@ Note what each bit of code does and who wrote it :)
 - Generates synhtetic data based on various distributions (normal, lognormal, exponential, gamma, beta , weibull_min, t , f)
 - Picks the best perfomring distrubution for each column maintaining the mean and variance of the real data.
 - Data files used: NumOp1.csv, NumOp2.csv, NumOp3.csv
+
+# FinalNumericalData.ipynb (Chakaya)
+- Creates the final numerical dataset based off option 2 in NumericalDataOpt.ipynb
+- Data files used: d_items.csv, chartevents.csv, patients.csv
+- Generates final.csv
