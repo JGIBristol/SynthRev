@@ -49,3 +49,8 @@ Note what each bit of code does and who wrote it :)
 - Creates visualizations to compare the synthetic and real data
 - Uses the final.csv file
 - **_Note: the visuals and correlations change every time the code is run because the synthetic data is generated randomly_**
+
+# KDE_Synth_Data_Gen.py (Huw)
+- Gernates synthetic data based on Kernel Density Estimation
+- Got one function that samples columns independently which works
+- Another function which currently doesn't work that would generate a multi-variate KDE
