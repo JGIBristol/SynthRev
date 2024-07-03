@@ -1,3 +1,7 @@
+import numpy as np
+import pandas as pd
+from scipy.stats import gaussian_kde
+
 def generate_kde_indep(nums, sample_num):
     """
     Generate numerical synthetic data based on independent KDE of each column.
