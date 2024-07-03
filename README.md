@@ -31,7 +31,7 @@ If this is too difficult/computationally intensive, she could just extract the f
 - [x] Chakaya will then look into writing some basic synthetic generation based on independently sampling from each column. A few suggested options below:
     1) Work out the sample mean and variance of each column individually. And then randomly sample from a Gaussian of the same mean and variance for your         synthetic.
     2) pick a collection of different continuous probability distributions (e.g. gaussian, log-normal, exponential...), set them to be the same mean and variance as your data and pick which one fits best for each column, or least worst. Then randomly sample from that to synthesise new data.
-- [ ] Huw to think about which distributions are best!
+(Huw to think about which distributions are best!)
     3) Generate a KDE for each variable and then sample from that (recommend looking at:https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.gaussian_kde.html)
 - [x] Brainstorm what methods you could use for benchmarking synthetic data, both in terms of statistical fidelity as well as privacy preservation.
     Some suggested options:
