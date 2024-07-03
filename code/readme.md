@@ -43,3 +43,9 @@ Note what each bit of code does and who wrote it :)
 - Creates the final numerical dataset based off option 2 in NumericalDataOpt.ipynb
 - Data files used: d_items.csv, chartevents.csv, patients.csv
 - Generates final.csv
+
+# SyntheticViz.ipynb (Chakaya)
+- Generates synthetic data based on statistical properties and distributions of the numerical columns
+- Creates visualizations to compare the synthetic and real data
+- Uses the final.csv file
+- **_Note: the visuals and correlations change every time the code is run because the synthetic data is generated randomly_**
