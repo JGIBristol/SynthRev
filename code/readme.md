@@ -52,5 +52,9 @@ Note what each bit of code does and who wrote it :)
 
 # KDE_Synth_Data_Gen.py (Huw)
 - Generates synthetic data based on Kernel Density Estimation
-- Got one function that samples columns independently which works
-- Another function which currently doesn't work that would generate a multi-variate KDE
+- generate_kde_indep takes in original data and sample number then independently makes a KDE of each column and samples from them to make a synthetic dataset
+- generate_kde_multi takes in original data and sample number then generates a KDE of the entire dataset and samples from that to make a synthetic dataset
+
+# HouseSynthExample.ipynb (Huw)
+- Takes in housing data from sklearn (~20000 rows, 8 columns), applies either of the methods from KDE_Synth_Data_Gen.py
+- Plots side by side correlation matrices as well as a layered pairplot to compare the two.
