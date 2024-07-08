@@ -43,3 +43,18 @@ Note what each bit of code does and who wrote it :)
 - Creates the final numerical dataset based off option 2 in NumericalDataOpt.ipynb
 - Data files used: d_items.csv, chartevents.csv, patients.csv
 - Generates final.csv
+
+# SyntheticViz.ipynb (Chakaya)
+- Generates synthetic data based on statistical properties and distributions of the numerical columns
+- Creates visualizations to compare the synthetic and real data
+- Uses the final.csv file
+- **_Note: the visuals and correlations change every time the code is run because the synthetic data is generated randomly_**
+
+# KDE_Synth_Data_Gen.py (Huw)
+- Generates synthetic data based on Kernel Density Estimation
+- generate_kde_indep takes in original data and sample number then independently makes a KDE of each column and samples from them to make a synthetic dataset
+- generate_kde_multi takes in original data and sample number then generates a KDE of the entire dataset and samples from that to make a synthetic dataset
+
+# HouseSynthExample.ipynb (Huw)
+- Takes in housing data from sklearn (~20000 rows, 8 columns), applies either of the methods from KDE_Synth_Data_Gen.py
+- Plots side by side correlation matrices as well as a layered pairplot to compare the two.

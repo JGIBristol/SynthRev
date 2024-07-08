@@ -37,8 +37,8 @@ If this is too difficult/computationally intensive, she could just extract the f
     Some suggested options:
       1) Compare summary stats (mean, median, quartiles, range, outliers etc) for each variable between original and synthetic data
       2) Compare correlation coeffecients between each pair of variables in original and then in synthetic data (might want to output this as a heatmap?)
-- [ ] Plot correlation heatmaps inspired by some of the plots from: https://milliams.com/courses/applied_data_analysis/Correlation.html to compare the two datasets.
-- [ ] Write some benchmarking code that compares the distribution between original and synthetic variables, the correlations between pairs of variables and maybe some other basic sanity checks.
+- [x] Plot correlation heatmaps inspired by some of the plots from: https://milliams.com/courses/applied_data_analysis/Correlation.html to compare the two datasets.
+- [x] Write some benchmarking code that compares the distribution between original and synthetic variables, the correlations between pairs of variables and maybe some other basic sanity checks.
       
 3.	Pick some more involved ML methods, maybe using pre-existing packages (one option is: https://github.com/vanderschaarlab/synthcity) or code your own. (Whatever time you have left!)
 - [ ] Chakaya to pick her top 3 fancy ML methods for generating synthetic data, read about them and email Huw the relevant papers + github repos
