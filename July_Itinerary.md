@@ -1,10 +1,13 @@
 # Itinerary for Chakaya's visit July 15th - 17th 
-(Not finalised)
 
 ## Monday 15th
 - Arrive mid-morning/early afternoon
 - Huw will meet you at Royal Fort House on University of Bristol Campus (https://www.bristol.ac.uk/golding/about/) and show you around
 - Lunch
+
+### 1:45-2:30 Meeting chat with Dan Lawson, JGI Director
+- Huw, Dan and Chakaya to chat about what work she's been doing, how it's going and future plans.
+- Dan wants to know how we can support your work moving forward.
 
 ### 3-4 Co-working with Will Chapman, JGI Data Scientist: 
 - Chakaya can show Will her work processing MIMIC IV

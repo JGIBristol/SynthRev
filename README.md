@@ -23,7 +23,7 @@ For each one, we looked at the data type and see how easy it will be to replicat
 - [x] Chakaya's next step is to look into numerical data for MIMIC and extract time series data with the following columns:
 subject_id, hadm_id, age, chart_time, Respiratory Rate, O2 saturation pulseoxymetry, ART BP Systolic, Heart Rate, GCS Total, Temperature Celsius
 If this is too difficult/computationally intensive, she could just extract the first reading for each of these variables for each hadm_id
-- [ ] To account for the huge amount of NaNs:
+- [x] To account for the huge amount of NaNs:
       1) Pick your favourite method for extracting rows of data with minimal         NaNs.
       2) Run on the first 20 million entries and get about 4000 out, save             locally as a csv.
       3) Iterate through all 300 million so you get ~ 15 csv files out.            4) Remove all rows which have more than 2 NaNs.
@@ -42,7 +42,10 @@ If this is too difficult/computationally intensive, she could just extract the f
       
 3.	Pick some more involved ML methods, maybe using pre-existing packages (one option is: https://github.com/vanderschaarlab/synthcity) or code your own. (Whatever time you have left!)
 - [ ] Chakaya to pick her top 3 fancy ML methods for generating synthetic data, read about them and email Huw the relevant papers + github repos
-For each method:
+      - [ ] Follow along [this blog post](https://blog.paperspace.com/implementing-gans-in-tensorflow/) and make sure you can make code work for this example in a separate jupyter notebook
+      - [ ] Then try for 1 column from your MIMIC data ~10000 values and remove NaNs for now
+      - [ ] Then start looking at how to do that for multiple variables
+      - [ ] Read this paper (especially look at the benchmarking for privacy preserving things) https://arxiv.org/abs/1806.03384
 - [ ] Use it generate some synthetic data
 - [ ] Use some of your benchmarking methods to evaluate how good the synthesis methods are
 
