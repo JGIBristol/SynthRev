@@ -58,3 +58,6 @@ Note what each bit of code does and who wrote it :)
 # HouseSynthExample.ipynb (Huw)
 - Takes in housing data from sklearn (~20000 rows, 8 columns), applies either of the methods from KDE_Synth_Data_Gen.py
 - Plots side by side correlation matrices as well as a layered pairplot to compare the two.
+
+# GANExample.ipynb (Chakaya)
+- Generates data from a simple quadratic distribution and uses a GAN to learn a function that can generate similar data.
