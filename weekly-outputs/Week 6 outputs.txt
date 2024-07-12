@@ -57,4 +57,4 @@ Week 6 outputs
 
 Note:
 
-~ Yet to implement the graphs on the blog post for a visual representation of the GAN performance.
+~ Yet to implement the graphs on the blog post for a visual representation of the GAN performance. 
