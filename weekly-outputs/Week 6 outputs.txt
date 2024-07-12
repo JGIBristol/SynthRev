@@ -54,3 +54,7 @@ Week 6 outputs
 2. Machine learning score similarity - Assesses model compatibility by comparing the performance of machine learning models trained on original versus anonymized/synthetic data using F-1 score for classification and mean relative error (MRE) for regression
 
 - Baseline methods used: ARX (anonymization), sdcMicro (perturbation) and Condensation method + DCGAN
+
+Note:
+
+~ Yet to implement the graphs on the blog post for a visual representation of the GAN performance.
