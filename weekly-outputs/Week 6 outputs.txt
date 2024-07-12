@@ -1,0 +1,56 @@
+Week 6 outputs
+---------------
+
+1. Reading/Writing code from the blog post on a simple example of implementing GANs
+
+- Objective: generate a simple quadratic distribution and use a GAN to learn a function that can generate similar data.
+
+- The quadratic function used to generate the 'real' data is y = 10 + x**2
+
+- The generator: builds a neural network to transform random input into data resembling the real dataset's distribution. It uses TensorFlow layers.
+
+- The discriminator: builds a neural network to classify input samples as real or fake. It uses TensorFlow layers to specify the architecture and outputs both the prediction and a 2D feature transformation for visualization purposes.
+
+- The generator creates fake sample from random noise, the discriminator evaluates both real and fake samples.
+
+- Discriminator loss: compares real sample logits to tensor of ones and generated sample logits to tensor of zeros, the mean of these losses represent how well the Discriminator distinguishes real from fake.
+
+- Generator loss: compares generated samples logits to tensor of ones, the mean of this loss measure how well the G fools the D.
+
+- During training the optimiser used is RMSProp Optimiser (minimize loss and adjust weights if the neural network)
+
+2. Implementing the blog post example to our data.
+
+- Used the heart rate column since it has null values, also used 10,000 observations for the implementation.
+
+- Only minor change was the data access, in the example the 'real' data is generated randomly from a quadratic distribution while in our example the real data is gotten from a real dataset.
+
+- From the results of the discriminator and generator losses we can conclude that: The discriminator quickly becomes very effective (loss drops to zero), the generator struggles throughout the training process, as indicated by the increasing generator loss.
+
+- The GAN does not perform well especially the generator, task: look into ways to improve the overall performance of the GAN.
+
+3. Paper: Data Synthesis based on GANs (look at the benchmarking for privacy preserving things)
+
+- The paper discusses a GAN approach to address privacy concerns when sharing or releasing data. 
+
+- Privacy concerns from traditional methods like anonymization and perturbation (adding noise) have limitations such as re-identification attacks and compromise on the utility of the data.
+
+- Three privacy concerns addressed in the paper include: re-identification attack, attribute disclosure, and membership attack ( infer whether specific data was part of the training set.)
+
+- The proposed table-GAN solution has the following benefits:
+
+* No one-to-one relationship between real records and synthetic records making reidentification and attribute disclosure difficult.
+* All attribute values are fake and safe from attribute disclosure.
+* Hinge-loss used to prevent membership attacks.
+
+- Privacy-related evaluation metrics used include:
+
+1. Distance to the closest record - Measures the Euclidean distance between a record in the anonymized/synthetic table and the closest record in the original table. Larger average distances and smaller standard deviations indicate better privacy.
+2. Membership attacks - 
+
+- Data utility-related evaluation metrics:
+
+1. Statistical comparison-  compare statistical similarity between an attribute in the original table and a corresponding attribute in anonymized
+2. Machine learning score similarity - Assesses model compatibility by comparing the performance of machine learning models trained on original versus anonymized/synthetic data using F-1 score for classification and mean relative error (MRE) for regression
+
+- Baseline methods used: ARX (anonymization), sdcMicro (perturbation) and Condensation method + DCGAN
