@@ -41,13 +41,15 @@ If this is too difficult/computationally intensive, she could just extract the f
 - [x] Write some benchmarking code that compares the distribution between original and synthetic variables, the correlations between pairs of variables and maybe some other basic sanity checks.
       
 3.	Pick some more involved ML methods, maybe using pre-existing packages (one option is: https://github.com/vanderschaarlab/synthcity) or code your own. (Whatever time you have left!)
-- [ ] Chakaya to pick her top 3 fancy ML methods for generating synthetic data, read about them and email Huw the relevant papers + github repos
-- [ ] Follow along [this blog post](https://blog.paperspace.com/implementing-gans-in-tensorflow/) and make sure you can make code work for this example in a separate jupyter notebook
-- [ ] Then try for 1 column from your MIMIC data ~10000 values and remove NaNs for now
-- [ ] Then start looking at how to do that for multiple variables
-- [ ] Read this paper (especially look at the benchmarking for privacy preserving things) https://arxiv.org/abs/1806.03384
-- [ ] Use it generate some synthetic data
-- [ ] Use some of your benchmarking methods to evaluate how good the synthesis methods are
+- [x] Follow along [this blog post](https://blog.paperspace.com/implementing-gans-in-tensorflow/) and make sure you can make code work for this example in a separate jupyter notebook
+- [x] Then try for 1 column from your MIMIC data ~10000 values and remove NaNs for now
+- [x] Then start looking at how to do that for multiple variables
+- [x] Read this paper (especially look at the benchmarking for privacy preserving things) https://arxiv.org/abs/1806.03384
+
+- [ ] Using benchmarking code we've got, aspire to get your GAN to outperform the multidimensional KDE
+- [ ] Make copies of things on the JGI server:
+      - [ ] The bare minimum of what I would like on the server is the cleaned version of the data we're trying to make a synthetic version of (so the one with fewer NaNs             and the columns about the vital readings). And then the code on generating synthetic data via statistical methods, KDEs and anything for your GANs code. Eventually             when we have some benchmarking code, we would put that on too so that you could generate and benchmark synthetic data on the server.
+      - [ ] What would be cool but not required is if the entire pipeline, from the original MIMIC data csv files and all the code to clean and process them into the end             product was on the server too. But I'm not sure how difficult that would be to implement. If you did do this, make sure the "raw" data is in a folder and that folder             has a readme linking to the ethics course needed to access it.
 
 ### Other suggested acitivites 
 
