@@ -1,0 +1,16 @@
+Week 9 Outputs
+--------------
+
+- Attempting doing the WGAN model to solve the non-convergence issue of the original GAN model.
+
+Blog post used: https://blog.paperspace.com/wgans/
+
+- Updated the current GAN model with the WGAN example from the blog post.
+
+- The WGAN model showed significant improvements from the original GAN model, with both the discriminator and generator almost converging. The generator slightly outperforms the discriminator.
+
+- Created graphs to show how the GAN model was performing. The training resulted in synthetic data that significantly resembled the real data.
+
+- Updated the code on the server.
+
+- Created a final synthetic dataset with 10,000 samples.
