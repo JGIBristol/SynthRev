@@ -66,3 +66,16 @@ Note what each bit of code does and who wrote it :)
 - Generates synthetic data from the numeric dataset based on the GAN example in the blog post (GANExample.ipynb).
 - Uses the Heart rate column and 10,000 rows.
 - Data files used: final.csv.
+
+# WGAN.ipynb (Chakaya)
+- Generated synthetic data from the numeric dataset using Wasserstein GANs (an improvement of the GANExampleHR.ipynb).
+- Uses the following columns: anchor_age, ART BP Sytolic, heart rate, O2 saturation pulseoxymetry and respiratory rate.
+- Generates 10,000 samples.
+- Data files used: final.csv
+- Generates: synthetic data.csv
+
+# KDEFinal.ipynb (Chakaya)
+- Generates synthetic data by applying either of the methods in KDE_Synth_Data_Gen.py
+- Plots visuals to compare real and synthetic data.
+- Generates synthetic data-KDE.csv from the multivariate sampling.
+- Uses final.csv
