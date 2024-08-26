@@ -25,11 +25,6 @@ Note what each bit of code does and who wrote it :)
 - Filtered items extracted in d_items.csv include 22021: Respiratory Rate, 220277: O2 Saturation pulseoxymetry, 225309:ART BP Systolic, 220045: Heart Rate, 20739: GCS - Eye Opening, 223900: GCS - Verbal Response, 223901: GCS - Motor Response, 223762: Temperature Celsius
 - **_Note: Appropriate option for data cleaning will be identified and code will be updated accordingly_**	
 
-# NumericalSyntheticDataDist.ipynb (Chakaya)
-- Generates synhtetic data based on various distributions (normal, lognormal, exponential, gamma, beta , weibull_min, t , f)
-- Picks the best perfomring distrubution for each column maintaining the mean and variance of the real data.
-- Data files used: NumOp1.csv, NumOp2.csv, NumOp3.csv
-
 # FinalNumericalData.ipynb (Chakaya)
 - Creates the final numerical dataset based off option 2 in NumericalDataOpt.ipynb
 - Data files used: d_items.csv, chartevents.csv, patients.csv
