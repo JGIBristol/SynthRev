@@ -14,11 +14,6 @@ Note what each bit of code does and who wrote it :)
 - Generates the csv files for these two datasets, Combined_Diagnosis.csv, Combined_Treatments.csv
 - Data files used: icustays.csv, patients.csv, admissions.csv, d_icd_diagnoses.csv, diagnoses.csv, d_icd_procedures.csv, procedures_icd.csv
 
-# NumericalData.ipynb (Chakaya)
-- This code extracts numerical data based on specified numerical variables such as age and heart rate.
-- Generates the NumericalData.csv file
-- Data files used: d_items.csv, chartevents.csv, patients.csv
-
 # NumericalDataOpt.ipynb (Chakaya)
 - This code is used to create numerical datasets.
 - Three options are used:
