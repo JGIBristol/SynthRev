@@ -12,22 +12,13 @@ Note what each bit of code does and who wrote it :)
 - Code for creating a consolidated dataset based on categorical features.
 - Creates two seperate datasets for diagnosis and treatments.
 - Generates the csv files for these two datasets, Combined_Diagnosis.csv, Combined_Treatments.csv
-- Data files used: icustays.csv, patients.csv, admissions.csv, d_icd_diagnoses.csv, diagnoses.csv, d_icd_procedures.csv, procedures_icd.csv
-
-# NumericalDataOpt.ipynb (Chakaya)
-- This code is used to create numerical datasets.
-- Three options are used:
-  - Option 1: Using the earliest chart time for each hadm_id
-  - Option 2: Picking the charttime with the fewest NaNs
-  - Option 3: Picking the first reading within the hour (from the start of the first recorded time)
-- Generates three csv files NumOp1.csv, NumOp2.csv and NumOp3.csv
-- Data files used: d_items.csv, chartevents.csv, patients.csv
-- Filtered items extracted in d_items.csv include 22021: Respiratory Rate, 220277: O2 Saturation pulseoxymetry, 225309:ART BP Systolic, 220045: Heart Rate, 20739: GCS - Eye Opening, 223900: GCS - Verbal Response, 223901: GCS - Motor Response, 223762: Temperature Celsius
-- **_Note: Appropriate option for data cleaning will be identified and code will be updated accordingly_**	
+- Data files used: icustays.csv, patients.csv, admissions.csv, d_icd_diagnoses.csv, diagnoses.csv, d_icd_procedures.csv, procedures_icd.csv	
 
 # FinalNumericalData.ipynb (Chakaya)
-- Creates the final numerical dataset based off option 2 in NumericalDataOpt.ipynb
+- Creates the final numerical dataset based off picking the charttime with the fewest NaNs
+- Parses through the entire chartevents dataset for a comprehensive final dataset
 - Data files used: d_items.csv, chartevents.csv, patients.csv
+- Filtered items extracted in d_items.csv include 22021: Respiratory Rate, 220277: O2 Saturation pulseoxymetry, 225309:ART BP Systolic, 220045: Heart Rate, 20739: GCS - Eye Opening, 223900: GCS - Verbal Response, 223901: GCS - Motor Response, 223762: Temperature Celsius
 - Generates final.csv
 
 # SyntheticViz.ipynb (Chakaya)
