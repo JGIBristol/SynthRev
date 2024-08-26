@@ -55,7 +55,7 @@ Note what each bit of code does and who wrote it :)
 - Plots side by side correlation matrices as well as a layered pairplot to compare the two.
 
 # GANExampleHR.ipynb (Chakaya)
-- Generates synthetic data from the numeric dataset based on the GAN example in this blog post
+- Generates synthetic data from the numeric dataset based on the GAN example in [this blog post](https://blog.paperspace.com/implementing-gans-in-tensorflow/)
 - Uses the Heart rate column and 10,000 rows.
 - Data files used: final.csv.
 
