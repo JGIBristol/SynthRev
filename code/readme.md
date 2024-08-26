@@ -54,9 +54,9 @@ Note what each bit of code does and who wrote it :)
 - Takes in housing data from sklearn (~20000 rows, 8 columns), applies either of the methods from KDE_Synth_Data_Gen.py
 - Plots side by side correlation matrices as well as a layered pairplot to compare the two.
 
-# GANExampleHR.ipynb (Chakaya)
+# GAN_Example.ipynb (Chakaya)
 - Generates synthetic data from the numeric dataset based on the GAN example in [this blog post](https://blog.paperspace.com/implementing-gans-in-tensorflow/)
-- Uses the Heart rate column and 10,000 rows.
+- Uses the 'anchor_age','Heart Rate', 'O2 saturation pulseoxymetry', 'Respiratory Rate' columns ie columns with fewest NaNs.
 - Data files used: final.csv.
 
 # WGAN.ipynb (Chakaya)
