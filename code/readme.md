@@ -14,7 +14,7 @@ Note what each bit of code does and who wrote it :)
 - Generates the csv files for these two datasets, Combined_Diagnosis.csv, Combined_Treatments.csv
 - Data files used: icustays.csv, patients.csv, admissions.csv, d_icd_diagnoses.csv, diagnoses.csv, d_icd_procedures.csv, procedures_icd.csv	
 
-# FinalNumericalData.ipynb (Chakaya)
+# NumericalData.ipynb (Chakaya)
 - Creates the final numerical dataset based off picking the charttime with the fewest NaNs
 - Parses through the entire chartevents dataset for a comprehensive final dataset
 - Data files used: d_items.csv, chartevents.csv, patients.csv
