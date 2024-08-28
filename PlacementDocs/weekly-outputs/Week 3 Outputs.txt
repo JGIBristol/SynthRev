@@ -1,0 +1,19 @@
+Week 3 Outputs
+--------------
+
+1. Agreed on splitting the data into categorical data and numerical data.
+
+2. Extracted numerical data from the icu module. The tables used for this were the items table, chart events and patients table.
+
+3. The focus was to extract the following variables from the items table: Respiratory rate, O2 saturation pulseoxymetry, ART BP Systolic, Heart Rate, GCS Total, Temperature Celsius.
+
+4. Chart events has over 300 million records therefore decided to only load about 20 million records and only load the first reading of each item for a particular hadm_id. (this was amended to pick the first reading of a hadm_id based on the earliest charttime, hence removing duplicates in the hadm_id)
+
+**Note**
+- The dataset created in this way had very many NaN values in the columns, might not be very useful in the analysis with all those NaNs
+
+5. Issue with the GCS-Total, the initial code was picking the first value for each item as well as hadm_id, so when summing GCS, there was a value for each.
+
+6. Experimented with creating synthetic data of the numerical variables based on their mean and variance and sampling from a normal distribution.
+
+7. Next step is to attempt other methods of creating the numerical dataset ie using values with the least NaNs, aggregating the variables accordingly. Also experiment with other distributions in creating the synthetic data.

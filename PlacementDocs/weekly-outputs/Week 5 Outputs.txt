@@ -1,0 +1,28 @@
+Week 5 Outputs
+---------------
+
+- Decided to go with option 2: Picking the charttime with the fewest NaNs for the data cleaning.
+
+- Processed the whole chart events table in batches of 20M rows with 16 iterations, got a complete dataset with 63,610 rows.
+
+- Created the correlation matrices and heatmaps, realised that there is a different result every time the functions are ran because the synthetic data is generated randomly.
+
+Question: Because the synthetic data is created randomly and new data is created after every run of the code, how do we compare the real and synthetic data accurately?
+
+- Identified various ML models we could use to generate synthetic data:
+
+1. table-GAN: a method using Generative Adversarial Networks (GANs) to synthesize fake tables that are statistically similar to the original table but do not incur information leakage. Paper: https://www.vldb.org/pvldb/vol11/p1071-park.pdf. GitHub: https://github.com/mahmoodm2/tableGAN/tree/master (code does not make sense) 
+
+* The proposed table-GAN model includes three neural networks: the generator (G), the discriminator (D), and the classifier (C).
+
+* It includes - Strided Convolutions : Replace pooling functions. Batch Normalization: Used to stabilize training. ReLU for Generator: Activation function for the generator.LeakyReLU for Discriminator: Activation function for the discriminator.
+
+* Loss functions- Original Loss: Adopted from DCGAN, used to train the discriminator (maximizing the objective) and the generator (minimizing the objective). Information Loss: Measures the discrepancy in the first-order (mean) and second-order (standard deviation) statistics between real and synthetic records. Classification Loss: Ensures the semantic integrity of synthetic records.
+
+* The training algorithm involves updating the discriminator, classifier, and generator using stochastic gradient descent (SGD) with mini-batches.
+
+2. Bayesian Network: uses MIMIC- III dataset paper: https://academic.oup.com/jamia/article/28/4/801/6046159?login=true#232034944
+
+*  Involves learning the network structure from data and estimating parameters for local distributions using maximum likelihood estimators.
+
+* Bayesian Network Construction: Networks learned without prior knowledge through the bnlearn package in R. 

@@ -1,0 +1,26 @@
+Week 7 Outputs
+---------------
+
+Challenge: The discriminator is performing too good too fast while the generator is performing really poorly.
+
+Solutions:
+
+1. Tweak hyperparameters i.e. Activation functions, kernel initializer, dropout, weight regularized, weight constraint, batch normalization, training epochs, batch size, optimizers, learning rate, decay, momentum and loss (https://www.researchgate.net/figure/List-of-hyperparameters-and-settings-tested-during-optimization-of-GAN-model_tbl1_347524660)
+
+2. Annealing - reducing the discriminator's capacity helps in avoiding discriminator dominance.
+
+- Options to try for reducing the discriminator capacity:
+
+** Train generator multiple times for every discriminator update
+** Hyperparameter tuning i.e. smaller learning rate for discriminator, optimizers etc
+** Increase complexity of the generator 
+
+What is a good trade-off (discriminator to perform better, vice-versa or equal performance?)
+
+Does the random noise inputted in the generator affect its performance?
+
+How does the generator work? Does it generate random samples from a single record or from the entire data frame?
+
+Look at this blog post for a different approach of creating the model: https://machinelearningmastery.com/how-to-develop-a-generative-adversarial-network-for-a-1-dimensional-function-from-scratch-in-keras/
+
+Trip to Bristol - co-working with Richard, Leo and James, networking lunch, progress presentation to the JGI team, meeting with JGI Director. (Overall exciting experience and got to learn a lot from the guys I co-worked with)
