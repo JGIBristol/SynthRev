@@ -7,7 +7,7 @@ This repository contains all the work I completed during my summer placement at 
 ### 1. 'code/'
 This folder contains all the necessary code developed during the placement. The code includes scripts and notebooks I created or modified as part of my projects.
 
-### 2. 'Placement Docs/'
+### 2. 'PlacementDocs/'
 This folder contains all the documentation related to my placement, including weekly outputs and project steps.
 
 
